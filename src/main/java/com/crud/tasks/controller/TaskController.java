@@ -12,6 +12,7 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
 @RestController
 @RequestMapping("/v1/task")
+@CrossOrigin(origins = "*")
 public class TaskController {
     @Autowired
     private DbService service;
@@ -29,7 +30,7 @@ public class TaskController {
     }
 
     @RequestMapping (method = RequestMethod.DELETE, value = "deleteTask")
-    public void deleteTask (@RequestParam Long taskId) throws TaskNotFoundException {
+    public void deleteTask (@RequestParam Long taskId){
         service.deleteTask(taskId);
     }
 
