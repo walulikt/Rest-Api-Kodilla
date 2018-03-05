@@ -17,14 +17,14 @@ public class TasksApplicationTests {
 	@Test
 	public void getTrelloBoardsTest(){
 		//Given
-		TrelloBoardDto trelloBoardDto = new TrelloBoardDto("board1", "123");
-		TrelloBoardDto trelloBoardDto1 = new TrelloBoardDto("Kodilla","321");
+		//TrelloBoardDto trelloBoardDto = new TrelloBoardDto("board1", "123");
+		//TrelloBoardDto trelloBoardDto1 = new TrelloBoardDto("Kodilla","321");
 		TrelloBoardDto trelloBoardDto2 = new TrelloBoardDto();
 
 		// When
 		ArrayList<TrelloBoardDto> tBDto = new ArrayList<>();
-		tBDto.add(trelloBoardDto);
-		tBDto.add(trelloBoardDto1);
+		//tBDto.add(trelloBoardDto);
+		//tBDto.add(trelloBoardDto1);
 		tBDto.add(trelloBoardDto2);
 
 		//Then
