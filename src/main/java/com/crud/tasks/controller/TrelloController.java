@@ -21,8 +21,8 @@ public class TrelloController {
     private TrelloClient trelloClient;
 
     @RequestMapping(method = RequestMethod.GET, value = "getTrelloBoards")
-    public void getTrelloBoards() {
-        List<TrelloBoardDto> trelloBoards = trelloClient.getTrelloBoards();
+    public List<TrelloBoardDto> getTrelloBoards() {
+        List<TrelloBoardDto> trelloBoards= trelloClient.getTrelloBoards();
 
         trelloBoards.stream()
                 .filter(i->i.getId()!= null)
@@ -35,22 +35,23 @@ public class TrelloController {
             trelloBoardDto.getLists().forEach(trelloList ->
                     System.out.println(trelloList.getName() + " - " + trelloList.getId() + " - " + trelloList.isClosed()));
         });
-    }
-
-    @RequestMapping (method = RequestMethod.POST,value = "createTrelloCard")
-    public CreatedTrelloCard createdTrelloCard(@RequestBody TrelloCardDto trelloCardDto){
-        return trelloClient.createNewCard(trelloCardDto);
+                return trelloBoards;
     }
 
    /* @RequestMapping (method = RequestMethod.POST,value = "createTrelloCard")
     public CreatedTrelloCard createdTrelloCard(@RequestBody TrelloCardDto trelloCardDto){
+        return trelloClient.createNewCard(trelloCardDto);
+    }*/
+
+    @RequestMapping (method = RequestMethod.POST,value = "createTrelloCard")
+    public CreatedTrelloCard createTrelloCard(@RequestBody TrelloCardDto trelloCardDto){
         CreatedTrelloCard trelloCard = trelloClient.createNewCard(trelloCardDto);
         System.out.println (trelloCard.getId() + " " + trelloCard.getName() + " " + trelloCard.getShortUrl());
 
-        System.out.println(trelloCard.getTrelloBadgesDto().getAttachments().getTrelloDto().getBoard());
-        System.out.println(trelloCard.getTrelloBadgesDto().getAttachments().getTrelloDto().getCard());
+       // System.out.println(trelloCard.getTrelloBadgesDto().getAttachmentsByTypeDto().getTrelloDto().getBoard());
+        //System.out.println(trelloCard.getTrelloBadgesDto().getAttachmentsByTypeDto().getTrelloDto().getCard());
 
         return trelloCard;
-    }*/
+    }
 
 }
