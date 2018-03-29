@@ -22,11 +22,6 @@ public class TrelloController {
                 return trelloFacade.fetchTrelloBoards();
     }
 
-   /* @RequestMapping (method = RequestMethod.POST,value = "createTrelloCard")
-    public CreatedTrelloCardDto createdTrelloCard(@RequestBody TrelloCardDto trelloCardDto){
-        return trelloFacade.createNewCard(trelloCardDto);
-    }*/
-
     @RequestMapping (method = RequestMethod.POST,value = "createTrelloCard")
     public CreatedTrelloCardDto createTrelloCard(@RequestBody TrelloCardDto trelloCardDto){
         return trelloFacade.createCard(trelloCardDto);

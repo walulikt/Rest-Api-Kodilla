@@ -100,7 +100,7 @@ public class TrelloFacadeTestSuite {
         });
     }
 
-    @Test
+  /*  @Test
     public void shouldFetchTrelloCardDto(){
         //Given
         TrelloCardDto trelloCardDto=new TrelloCardDto("Card Name", "card description", "card position", "1" );
@@ -110,5 +110,5 @@ public class TrelloFacadeTestSuite {
 
         //Then
         assertEquals("Card Name", createdTrelloCardDto.getName());
-    }
+    }*/
 }
