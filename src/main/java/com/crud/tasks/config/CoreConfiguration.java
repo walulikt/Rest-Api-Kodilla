@@ -1,6 +1,5 @@
 package com.crud.tasks.config;
 
-import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -13,9 +12,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import java.util.function.Predicate;
-
-import static springfox.documentation.builders.PathSelectors.ant;
 @EnableScheduling
 @EnableSwagger2
 @Configuration
