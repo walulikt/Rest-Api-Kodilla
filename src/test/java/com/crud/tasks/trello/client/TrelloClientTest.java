@@ -1,6 +1,7 @@
 package com.crud.tasks.trello.client;
 
 import com.crud.tasks.domain.CreatedTrelloCardDto;
+import com.crud.tasks.domain.TrelloBadgesDto;
 import com.crud.tasks.domain.TrelloBoardDto;
 import com.crud.tasks.domain.TrelloCardDto;
 import com.crud.tasks.trello.config.TrelloConfig;
@@ -32,6 +33,9 @@ public class TrelloClientTest {
 
     @Mock
     private TrelloConfig trelloConfig;
+
+    @Mock
+    private TrelloBadgesDto badgesDto;
 
     @Before
     public void init(){

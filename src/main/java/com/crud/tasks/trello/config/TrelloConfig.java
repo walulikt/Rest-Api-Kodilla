@@ -10,8 +10,8 @@ public class TrelloConfig {
     @Value("${trello.api.endpoint.prod}")
     private String trelloApiEndpoint;
 
-    /*@Value("${trello.app.members}")
-    private String trelloMember;*/
+    @Value("${trello.app.members}")
+    private String trelloMember;
 
     @Value ("${trello.app.key}")
     private String trelloAppKey;
