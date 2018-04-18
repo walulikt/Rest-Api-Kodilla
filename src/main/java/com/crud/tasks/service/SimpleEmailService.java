@@ -21,7 +21,6 @@ public class SimpleEmailService {
         LOGGER.info("Starting email preparation");
         try {
             SimpleMailMessage mailMessage = createMailMessage(mail);
-         //   System.out.println(mail.getMailTo() + " " +mail.getToCc());
             javaMailSender.send(mailMessage);
             LOGGER.info("Email has been sent.");
         } catch (MailException e){
@@ -30,8 +29,9 @@ public class SimpleEmailService {
     }
 
     private SimpleMailMessage createMailMessage (final Mail mail) {
+        System.out.println(mail.getMailTo() + " " +mail.getToCc());
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo(mail.getMailTo());
+        mailMessage.setTo("figofage@wp.pl");
         mailMessage.setSubject(mail.getSubject());
         mailMessage.setText(mail.getMessage());
         if(!mail.getToCc().equals(null)) {
