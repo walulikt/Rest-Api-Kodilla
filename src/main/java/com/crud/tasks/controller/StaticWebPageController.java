@@ -15,10 +15,10 @@ public class StaticWebPageController {
         model.put("two",2);
         String multi = "2 * 2 = ";
         model.put("multiply", multi);
-        multi = "2 * 2 + 2 = ";
-        model.put("multiply+", multi);
+        String multiAdd = "2 * 2 + 2 = ";
+        model.put("multiplyAddTwo", multiAdd);
         multi = "2 - 2 + 2 = ";
-        model.put("-multiply", multi);
+        model.put("substractAndMultiply", multi);
         return "index";
     }
 }

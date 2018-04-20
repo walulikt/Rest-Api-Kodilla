@@ -7,29 +7,25 @@
 <body>
 <h1>First impression of my page</h1>
 <!--/*@thymesVar id="variable" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<span th:text="${variable}"></span>
+<!--/*<span th:text="${variable}"></span>
 
-<br/>
-<!--/*@thymesVar id="one" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<!--/*@thymesVar id="two" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<!--<span th:text="${one} +${two}"></span>-->
-
-<br/>
+<br>
 <!--/*@thymesVar id="two" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
 <!--/*@thymesVar id="multiply" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
 <span th:text="${multiply}"></span>
 <span th:text="${two * two}"></span>
 <br/>
 <!--/*@thymesVar id="two" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<!--/*@thymesVar id="multiply+" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<span th:text="${multiply}"></span>
-<!--<span th:text="${two}*${two}+${two}"></span>-->
+<!--/*@thymesVar id="multiplyAddTwo" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
+<span th:text="${multiplyAddTwo}"></span>
+<span th:text="${two * two +two}"></span>
 
 <br/>
 <!--/*@thymesVar id="two" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<!--/*@thymesVar id="-multiply" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<!--<span th:text="${-multiply}"></span>-->
-<!--<span th:text="${two}-${two}*${two}"></span>-->
+<!--/*@thymesVar id="substractAndMultiply" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
+<span th:text="${substractAndMultiply}"></span>
+<span th:text="${two - two * two}"></span>
 
 </body>
+
 </html>
