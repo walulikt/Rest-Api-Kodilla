@@ -4,6 +4,8 @@ import com.crud.tasks.domain.Mail;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -19,18 +21,16 @@ public class SimpleEmailServiceTest {
     @Test
     public void shouldSendEmail(){
         //Given
-        Mail mail = new Mail ("test@test.com", "Test", "Test Message", null);
+        Mail mail = new Mail ("test@test.com", "This is test Subject", "This is test Message", null);
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setTo(mail.getMailTo());
         mailMessage.setSubject(mail.getSubject());
-        mailMessage.setSubject(mail.getMessage());
+        mailMessage.setText(mail.getMessage());
         //When
         simpleEmailService.send(mail);
 
         //Then
-      //  verify(javaMailSender, times(1)).send(mailMessage);
-
-
+        verify(javaMailSender, times(1)).send(mailMessage);
     }
 
 }

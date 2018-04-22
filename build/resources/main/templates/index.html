@@ -14,7 +14,7 @@
 <!--/*@thymesVar id="multiply" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
 <span th:text="${multiply}"></span>
 <span th:text="${two * two}"></span>
-<br>
+<br/>
 <!--/*@thymesVar id="two" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
 <!--/*@thymesVar id="multiplyAddTwo" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
 <span th:text="${multiplyAddTwo}"></span>
@@ -22,9 +22,10 @@
 
 <br/>
 <!--/*@thymesVar id="two" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<!--/*@thymesVar id="-multiply" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
-<!--<span th:text="${-multiply}"></span>-->
-<!--<span th:text="${two}-${two}*${two}"></span>-->
+<!--/*@thymesVar id="substractAndMultiply" type="com.crud.tasks.controller.StaticWebPagesController"*/-->
+<span th:text="${substractAndMultiply}"></span>
+<span th:text="${two - two * two}"></span>
 
 </body>
+
 </html>
