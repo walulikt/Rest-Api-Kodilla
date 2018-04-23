@@ -1,5 +1,6 @@
 package com.crud.tasks.service;
 
+import com.crud.tasks.config.ActuatorConfig;
 import com.crud.tasks.config.AdminConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,6 +15,9 @@ public class MailCreatorService {
     private AdminConfig adminConfig;
 
     @Autowired
+    private ActuatorConfig actuatorConfig;
+
+    @Autowired
     @Qualifier ("templateEngine")
     private TemplateEngine templateEngine;
 
@@ -23,6 +27,7 @@ public class MailCreatorService {
         context.setVariable("tasks_url","http://localhost:8080/crud");
         context.setVariable("button", "Visit website");
         context.setVariable("admin_name",adminConfig.getAdminName());
-        return templateEngine.process("mail/create-trello-card-mail", context);
+        context.setVariable("company_name", actuatorConfig.getCompanyName());
+        return templateEngine.process("mail/created-trello-card-mail", context);
     }
 }
