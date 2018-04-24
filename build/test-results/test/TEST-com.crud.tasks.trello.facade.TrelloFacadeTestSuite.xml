@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.crud.tasks.trello.facade.TrelloFacadeTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-04-21T21:08:25" hostname="TOMEK-KOMPUTER" time="0.0">
+<testsuite name="com.crud.tasks.trello.facade.TrelloFacadeTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-04-24T20:07:02" hostname="TOMEK-KOMPUTER" time="0.0">
   <properties/>
   <testcase name="shouldFetchEmptyList" classname="com.crud.tasks.trello.facade.TrelloFacadeTestSuite" time="0.0"/>
   <testcase name="shouldFetchTrelloBoard" classname="com.crud.tasks.trello.facade.TrelloFacadeTestSuite" time="0.0"/>
