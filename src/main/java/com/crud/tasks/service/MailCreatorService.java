@@ -21,6 +21,9 @@ public class MailCreatorService {
     private ActuatorConfig actuatorConfig;
 
     @Autowired
+    private DbService dbService;
+
+    @Autowired
     @Qualifier ("templateEngine")
     private TemplateEngine templateEngine;
 
@@ -40,5 +43,25 @@ public class MailCreatorService {
         context.setVariable("admin_config", adminConfig);
         context.setVariable("application_functionality",functionality);
         return templateEngine.process("mail/created-trello-card-mail", context);
+    }
+
+    public String dailyReportTaskCard (String message){
+        message = "On the end of this day you have those tasks in your Data Base";
+        List<String> tasksList = new ArrayList<>();
+        for (int i = 0; i<dbService.getAllTasks().size(); i++){
+            tasksList.add(dbService.getAllTasks().get(i).getTitle());
+        }
+        Context context = new Context();
+        context.setVariable("message", message);
+        context.setVariable("task_count", dbService);
+        context.setVariable("task_title_list", tasksList);
+        context.setVariable("tasks_url","http://localhost:8080/crud");
+        context.setVariable("button", "Visit website");
+        context.setVariable("company_name", actuatorConfig.getCompanyName());
+        context.setVariable("show_button",true);
+        context.setVariable("is_friend", true);
+        context.setVariable("admin_config", adminConfig);
+
+        return templateEngine.process("mail/daily-report-tasks-avaible-mail", context);
     }
 }
