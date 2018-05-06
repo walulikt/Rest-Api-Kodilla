@@ -4,17 +4,6 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
-    <facet type="web" name="Web Gradle : tasksProject-0.0.1-SNAPSHOT.war">
-      <configuration>
-        <webroots>
-          <root url="file://C:\Users\TOMEK\Documents\JAVA\Kodilla\tasksProject\src\main\webapp" relative="/" />
-        </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-          <root url="file://$MODULE_DIR$/src/main/java" />
-        </sourceRoots>
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/out/production/classes" />
