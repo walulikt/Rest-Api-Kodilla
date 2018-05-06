@@ -52,7 +52,7 @@ public class TaskControllerTestSuite {
         when(service.getAllTasks()).thenReturn(tasks);
 
         //When & Then
-        mockMvc.perform(get("/v1/task/getTasks"))
+        mockMvc.perform(get("/v1/tasks"))
                 .andExpect(status().is(200))
                 .andExpect(jsonPath("$",hasSize(0)));
     }
@@ -65,8 +65,8 @@ public class TaskControllerTestSuite {
         when(service.getTask(1L)).thenReturn(Optional.of(new Task()));
 
         //When & Then
-        mockMvc.perform(get("/v1/task/getTask").contentType(MediaType.APPLICATION_JSON)
-                .param("taskId","1"))
+        mockMvc.perform(get("/v1/tasks/1").contentType(MediaType.APPLICATION_JSON))
+              //  .param("taskId","1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id",is(1)))
                 .andExpect(jsonPath("$.title",is("Learn it!")));
@@ -80,7 +80,7 @@ public class TaskControllerTestSuite {
         String jsonContent = gson.toJson(taskDto);
     System.out.println(jsonContent);
         //When & Then
-        mockMvc.perform(post("/v1/task/createTask").contentType(MediaType.APPLICATION_JSON)
+        mockMvc.perform(post("/v1/tasks").contentType(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
                 .content(jsonContent))
                 .andExpect(status().is(200));
@@ -98,7 +98,7 @@ public class TaskControllerTestSuite {
         System.out.println(jsonContent);
 
         //When & Then
-        mockMvc.perform(put("/v1/task/updateTask").contentType(MediaType.APPLICATION_JSON)
+        mockMvc.perform(put("/v1/tasks").contentType(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
                 .content(jsonContent))
                 .andExpect(status().is(200));
@@ -112,8 +112,8 @@ public class TaskControllerTestSuite {
 
 
         //When & Then
-        mockMvc.perform(delete("/v1/task/deleteTask").contentType(MediaType.APPLICATION_JSON)
-               .param("taskId", "1"))
+        mockMvc.perform(delete("/v1/tasks/1").contentType(MediaType.APPLICATION_JSON))
+                // .param("taskId", "1"))
                 .andExpect(status().isOk());
     }
 }
