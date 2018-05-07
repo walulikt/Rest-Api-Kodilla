@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.crud.tasks.trello.client.TrelloClientTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-04-24T20:07:02" hostname="TOMEK-KOMPUTER" time="0.016">
+<testsuite name="com.crud.tasks.trello.client.TrelloClientTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-06T22:43:02" hostname="TOMEK-KOMPUTER" time="0.015">
   <properties/>
-  <testcase name="shouldFetchTrelloBoards" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.0"/>
-  <testcase name="shouldCreateCard" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.016"/>
+  <testcase name="shouldFetchTrelloBoards" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.015"/>
+  <testcase name="shouldCreateCard" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.0"/>
   <testcase name="shouldFetchEmptyArray" classname="com.crud.tasks.trello.client.TrelloClientTest" time="0.0"/>
   <system-out><![CDATA[http://test.com/cards?name=Test%20task&desc=Test%20description&pos=top&idList=test_id&key=test&token=test
 ]]></system-out>
