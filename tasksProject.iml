@@ -36,6 +36,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.postgresql:postgresql:9.4.1212.jre7" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-starter-mail:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.gson:gson:2.8.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: io.springfox:springfox-swagger2:2.7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: io.springfox:springfox-swagger-ui:2.7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.10.RELEASE" level="project" />
@@ -55,6 +56,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-context:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-context-support:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.sun.mail:javax.mail:1.5.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: io.swagger:swagger-annotations:1.5.13" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: io.swagger:swagger-models:1.5.13" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: io.springfox:springfox-spi:2.7.0" level="project" />
@@ -95,6 +98,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-tx:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.thymeleaf:thymeleaf:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.codehaus.groovy:groovy:2.4.13" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: io.springfox:springfox-core:2.7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.reflections:reflections:0.9.11" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: ch.qos.logback:logback-classic:1.1.11" level="project" />
@@ -102,6 +107,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat:tomcat-annotations-api:8.5.27" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.27" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: ognl:ognl:3.0.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.unbescape:unbescape:1.1.0.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: net.bytebuddy:byte-buddy:1.6.14" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: ch.qos.logback:logback-core:1.1.11" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:guava:20.0" level="project" />
@@ -112,6 +119,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.postgresql:postgresql:9.4.1212.jre7" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-mail:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.code.gson:gson:2.8.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.springfox:springfox-swagger2:2.7.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.springfox:springfox-swagger-ui:2.7.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.10.RELEASE" level="project" />
@@ -131,6 +139,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context-support:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.sun.mail:javax.mail:1.5.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.swagger:swagger-annotations:1.5.13" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.swagger:swagger-models:1.5.13" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.springfox:springfox-spi:2.7.0" level="project" />
@@ -171,6 +181,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-tx:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.thymeleaf:thymeleaf:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.codehaus.groovy:groovy:2.4.13" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.springfox:springfox-core:2.7.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.reflections:reflections:0.9.11" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-classic:1.1.11" level="project" />
@@ -178,6 +190,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.tomcat:tomcat-annotations-api:8.5.27" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.27" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: ognl:ognl:3.0.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.unbescape:unbescape:1.1.0.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.bytebuddy:byte-buddy:1.6.14" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-core:1.1.11" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.guava:guava:20.0" level="project" />
@@ -188,6 +202,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.postgresql:postgresql:9.4.1212.jre7" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-starter-mail:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.gson:gson:2.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.springfox:springfox-swagger2:2.7.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.springfox:springfox-swagger-ui:2.7.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.5.10.RELEASE" level="project" />
@@ -208,6 +223,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-context:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-context-support:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.sun.mail:javax.mail:1.5.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.swagger:swagger-annotations:1.5.13" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.swagger:swagger-models:1.5.13" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.springfox:springfox-spi:2.7.0" level="project" />
@@ -258,6 +275,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-tx:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.thymeleaf:thymeleaf:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.groovy:groovy:2.4.13" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.springfox:springfox-core:2.7.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.reflections:reflections:0.9.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: net.minidev:json-smart:2.2.1" level="project" />
@@ -268,6 +287,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.apache.tomcat:tomcat-annotations-api:8.5.27" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.27" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: ognl:ognl:3.0.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.unbescape:unbescape:1.1.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy:1.6.14" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: ch.qos.logback:logback-core:1.1.11" level="project" />

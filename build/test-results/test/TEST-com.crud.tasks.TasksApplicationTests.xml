@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.crud.tasks.TasksApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-05-06T22:43:01" hostname="TOMEK-KOMPUTER" time="0.015">
+<testsuite name="com.crud.tasks.TasksApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-05-07T20:38:59" hostname="TOMEK-KOMPUTER" time="0.093">
   <properties/>
   <testcase name="contextLoads" classname="com.crud.tasks.TasksApplicationTests" time="0.0"/>
-  <testcase name="getTrelloBoardsTest" classname="com.crud.tasks.TasksApplicationTests" time="0.015"/>
+  <testcase name="getTrelloBoardsTest" classname="com.crud.tasks.TasksApplicationTests" time="0.093"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

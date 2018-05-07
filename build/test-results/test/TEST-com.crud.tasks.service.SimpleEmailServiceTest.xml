@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.crud.tasks.service.SimpleEmailServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-06T22:43:01" hostname="TOMEK-KOMPUTER" time="0.0">
+<testsuite name="com.crud.tasks.service.SimpleEmailServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-07T20:38:59" hostname="TOMEK-KOMPUTER" time="0.0">
   <properties/>
   <testcase name="shouldSendEmail" classname="com.crud.tasks.service.SimpleEmailServiceTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
