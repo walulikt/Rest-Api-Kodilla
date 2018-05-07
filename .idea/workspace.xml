@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0958e8c3-43cb-4b61-8fe0-9871147e8e9b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_postgresql_postgresql_9_4_1212_jre7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__postgresql_postgresql_9_0_801_jdbc4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasksProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tasksProject.iml" afterDir="false" />
-    </list>
+    <list default="true" id="0958e8c3-43cb-4b61-8fe0-9871147e8e9b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -94,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="565">
               <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
             </state>
           </provider>
@@ -130,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -945,7 +938,7 @@
       <workItem from="1524647306085" duration="9949000" />
       <workItem from="1524679220156" duration="170000" />
       <workItem from="1525631791418" duration="5166000" />
-      <workItem from="1525720174031" duration="3240000" />
+      <workItem from="1525720174031" duration="4252000" />
     </task>
     <servers />
   </component>
@@ -982,10 +975,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57064000" />
+    <option name="totallyTimeSpent" value="58076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5042644" side_tool="true" weight="0.32899022" />
@@ -1007,8 +1001,8 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.34167573" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31773666" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12579957" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31773666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12579957" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32942432" />
@@ -1368,13 +1362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/crud/tasks/trello/facade/TrelloMapperTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
@@ -1391,8 +1378,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="565">
           <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
