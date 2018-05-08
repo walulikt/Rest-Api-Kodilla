@@ -20,7 +20,7 @@ public class TaskMapperTestSuite {
     @Autowired
     private TaskMapper taskMapper;
 
-    /*@Test
+    @Test
     public void taskMapperTest (){
         //Given
         Task task = new Task(1l, "Learn Java","Every day at list 3h" );
@@ -54,6 +54,6 @@ public class TaskMapperTestSuite {
 
         //Then
         Assert.assertEquals(1,taskDtoList.size());
-    }*/
+    }
 
 }

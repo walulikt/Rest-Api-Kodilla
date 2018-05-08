@@ -25,8 +25,6 @@ public class SimpleEmailService {
     public void send(final Mail mail) {
         LOGGER.info("Starting email preparation");
         try {
-        //    SimpleMailMessage mailMessage = createMailMessage(mail);
-        //    javaMailSender.send(mailMessage);
            javaMailSender.send(createMimeMessage(mail));
            LOGGER.info("Email has been sent.");
         } catch (MailException e){
@@ -43,14 +41,22 @@ public class SimpleEmailService {
         };
     }
 
-    private SimpleMailMessage createMailMessage (final Mail mail) {
-        SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo(mail.getMailTo());
-        mailMessage.setSubject(mail.getSubject());
-        mailMessage.setText(mailCreatorService.buildTrelloCardEmail(mail.getMessage()));
-        if(mail.getToCc().length()>0) {
-            mailMessage.setCc(mail.getToCc());
+    public void sendBySheduled(final Mail mail) {
+        LOGGER.info("Starting email preparation");
+        try {
+            javaMailSender.send(createSheduldeMimeMessage(mail));
+            LOGGER.info("Email has been sent by shedule.");
+        } catch (MailException e){
+            LOGGER.error("Faild to process shedule email sending: ", e.getMessage(), e);
         }
-        return mailMessage;
+    }
+
+    private MimeMessagePreparator createSheduldeMimeMessage (final Mail mail){
+        return  mimeMessage -> {
+            MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
+            messageHelper.setTo(mail.getMailTo());
+            messageHelper.setSubject(mail.getSubject());
+            messageHelper.setText(mailCreatorService.dailyReportTaskCard(mail.getMessage()),true);
+        };
     }
 }

@@ -19,7 +19,7 @@ public class TrelloMapperTestSuite {
     @Autowired
     private TrelloMapper trelloMapper;
 
-    /*@Test
+    @Test
     public void trelloMaptoBoardTest()  {
         //Given
         TrelloBoardDto trelloBoardDto = new TrelloBoardDto("board name", "test_id", new ArrayList<>());
@@ -96,5 +96,5 @@ public class TrelloMapperTestSuite {
 
         //Then
         Assert.assertEquals("Card name", trelloCard.getName());
-    }*/
+    }
 }
